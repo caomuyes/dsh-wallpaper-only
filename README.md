@@ -45,6 +45,8 @@ dsh plugin --profile desktop remove dsh-wallpaper
 
 安装后刷新页面（`Ctrl+Shift+R`）或重启桌面端，在 **设置 → 壁纸** 中配置。
 
+> 仓库名为 `dsh-wallpaper-only`（强调"只改壁纸"），插件包名 / 插件 id 仍是 `dsh-wallpaper`，
+> 因此卸载命令用 `remove dsh-wallpaper`。
 > 桌面端安装时如提示 profile 未初始化，先打开一次桌面端再执行命令。
 
 ## 使用
@@ -99,8 +101,12 @@ A wallpaper plugin for the DeepSeek Harness Web GUI: local images or built-in gr
 whole app, adjustable scrim & blur, optional translucent "glass" panels. Images are compressed in the
 browser and stored in `IndexedDB` — nothing is uploaded. Works on the Windows desktop app and `dsh web`.
 
+**Scope: this project only changes the wallpaper effect** (background image/gradient plus optional panel
+translucency). It does not touch color schemes, fonts, icons or layout, and removing it restores the
+original UI — it does not replace other DSH appearance plugins.
+
 Install: `dsh plugin --profile desktop add github:caomuyes/dsh-wallpaper-only`, then open
-**Settings → Wallpaper**.
+**Settings → Wallpaper**. The package/plugin id stays `dsh-wallpaper`; the repository name carries `-only`.
 
 ## License
 

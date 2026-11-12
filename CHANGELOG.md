@@ -6,7 +6,8 @@
   的覆盖改为作用在 `body` / `body[data-ds-dark-theme]`，不再被 body 同名声明遮蔽。
 - 修复：Windows 桌面端整窗外框 `[class*="q_frame"]` 用不透明侧栏色铺满、盖住壁纸的问题。
 - 玻璃面板补齐 `--dsw-alias-bg-layer-3` 与 `--dsw-specific-input-major` 的覆盖。
-- 文档：README 重写，补充安装方式、实现原理与兼容性；新增 LICENSE、CHANGELOG。
+- 文档：README 重写，补充安装方式、实现原理与兼容性；新增 LICENSE、CHANGELOG；
+  明确项目定位——只修改壁纸效果，不改配色/字体/布局。仓库发布为 GitHub `caomuyes/dsh-wallpaper-only`。
 
 ## 0.1.0 — 2026-11-13
 
