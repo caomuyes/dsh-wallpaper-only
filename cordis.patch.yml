@@ -1,0 +1,7 @@
+# dsh-wallpaper bundle patch：把插件行插入 profile 的 web 插件表。
+# 安装后由 profile 的 package.json（dsh.profile.bundles）拉起；
+# 宿主半（exports "."）保持空活跃，浏览器半（exports "./client"）由
+# package.json 的 dsh.client 声明自动在 Web GUI 里加载。
+- insert:
+    - id: dsh-wallpaper
+      name: dsh-wallpaper
